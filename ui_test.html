@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML Prototype Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .card {
+      max-width: 720px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    button {
+      padding: 12px 18px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      background: #0066ff;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0052cc;
+    }
+
+    .status {
+      margin-top: 16px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>✅ HTML Prototype Test</h1>
+    <p>
+      This is a simple interactive prototype to test browser hosting & sharing.
+    </p>
+
+    <button onclick="onTestClick()">Click me</button>
+
+    <div class="status" id="status"></div>
+  </div>
+
+  <script>
+    function onTestClick() {
+      document.getElementById("status").textContent =
+        "✅ Button works – JavaScript is running!";
+    }
+  </script>
+
+</body>
+</html>
+``
